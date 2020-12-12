@@ -42,7 +42,7 @@ while True:
             elif (final == 1):
                 pelota_obj.score_izq += 1
     else:
-        chrono = 15 - int(pygame.time.get_ticks() / 1000)
+        chrono = 300 - int(pygame.time.get_ticks() / 1000)
         contador = fuente.render(str(chrono), 1, (250,250,250))
         screen.blit(contador, ((width/2) - 15, 0))
         score_msg_izq = score_font.render(str(pelota_obj.score_izq), 1, (250,250,250) )
